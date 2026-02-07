@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <h1 id="greeting">Welcome</h1>
+        <div id="clock">00:00:00</div>
+    </header>
+
+    <main>
+        <section class="widget">
+            <h2>To‑Do List</h2>
+            <div class="todo-input">
+                <input type="text" id="todo-text" placeholder="Add a task..." />
+                <button id="add-todo">Add</button>
+            </div>
+            <ul id="todo-list"></ul>
+        </section>
+
+        <section class="widget">
+            <h2>Theme Colors</h2>
+            <div class="theme-row">
+                <label>Background</label>
+                <input type="color" id="color-bg">
+            </div>
+            <div class="theme-row">
+                <label>Text</label>
+                <input type="color" id="color-text">
+            </div>
+            <div class="theme-row">
+                <label>Card</label>
+                <input type="color" id="color-card">
+            </div>
+            <button id="reset-theme">Reset to Default</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
