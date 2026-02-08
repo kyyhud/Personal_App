@@ -1,15 +1,14 @@
 // --- GREETING ---
-function updateGreeting() {
+function updateGreeting(userName) {
     const hour = new Date().getHours();
     let message = "Welcome";
-
-    if (hour < 12) message = "Good morning";
-    else if (hour < 18) message = "Good afternoon";
-    else message = "Good evening";
+    if (hour < 12) message = `Good Morning ${userName}`;
+    else if (hour < 18) message = `Good Afternoon ${userName}`;
+    else message = `Good Evening ${userName}`;
 
     document.getElementById("greeting").textContent = message;
 }
-updateGreeting();
+updateGreeting("Kyle");
 
 // --- CLOCK ---
 function updateClock() {
