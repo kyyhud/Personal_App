@@ -102,12 +102,17 @@ addBtn.addEventListener("click", () => {
 
     todoInput.value = "";
 });
+todoInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+        addBtn.click();
+    }
+});
+
 function addTodoToDOM(text) {
     const li = document.createElement("li");
-    li.innerHTML = `
-        <span>${text}</span>
-        <button class="delete">X</button>
-    `;
+    li.innerHTML = 
+        `<span>${text}</span>
+        <button class="delete">X</button>`;
 
     li.querySelector(".delete").addEventListener("click", () => {
         todos = todos.filter(t => t !== text);
