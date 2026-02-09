@@ -72,7 +72,6 @@ resetThemeBtn.addEventListener("click", () => {
     colorCard.value = defaultColors.card;
 });
 
-
 colorBg.addEventListener("input", updateTheme);
 colorText.addEventListener("input", updateTheme);
 colorCard.addEventListener("input", updateTheme);

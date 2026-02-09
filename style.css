@@ -3,6 +3,10 @@
     --text: #222;
     --card: #ffffff;
 }
+
+.login {
+    padding-left: 20px;
+}
 .login>h2{
     padding-left: 10px;
 }
@@ -27,17 +31,16 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
 .theme-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
-
 .theme-row label {
     font-size: 1rem;
 }
-
 .theme-row input[type="color"] {
     width: 50px;
     height: 30px;
@@ -45,7 +48,6 @@
     background: none;
     cursor: pointer;
 }
-
 #reset-theme {
     margin-top: 10px;
 }
@@ -57,7 +59,6 @@ body {
     background: var(--bg);
     color: var(--text);
 }
-
 header {
     text-align: center;
     padding: 20px;
@@ -75,19 +76,18 @@ header {
     width: 90%;
     max-width: 500px;
     border-radius: 10px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .todo-input {
     display: flex;
     gap: 10px;
 }
-
 #todo-list {
     margin-top: 15px;
     padding: 0;
     list-style: none;
 }
-
 #todo-list li {
     background: var(--card);
     padding: 10px;
