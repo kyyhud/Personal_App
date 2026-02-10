@@ -1,9 +1,4 @@
-:root {
-    --bg: #f4f4f4;
-    --text: #222;
-    --card: #ffffff;
-}
-
+/** Login Page **/
 .login {
     padding-left: 20px;
 }
@@ -31,7 +26,73 @@
     border-radius: 4px;
     cursor: pointer;
 }
+/** General Styles **/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
 
+/** Widgets **/
+.widget {
+    background: var(--card);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/** Clock **/
+#clock {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/** To-Do List **/
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+#todo-list {
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+}
+#todo-list li {
+    background: var(--card);
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/** Drum Game **/
+a img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+figure {
+    margin: 0;
+    text-align: center;
+}
+figcaption {
+    font-size: 0.9rem;
+    color: #454545;
+    margin-top: 2px;
+}
+
+/** Theme Customizer **/
 .theme-row {
     display: flex;
     justify-content: space-between;
@@ -52,47 +113,4 @@
     margin-top: 10px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
-}
-header {
-    text-align: center;
-    padding: 20px;
-}
 
-#clock {
-    font-size: 2rem;
-    margin-top: 10px;
-}
-
-.widget {
-    background: var(--card);
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
-}
-
-.todo-input {
-    display: flex;
-    gap: 10px;
-}
-#todo-list {
-    margin-top: 15px;
-    padding: 0;
-    list-style: none;
-}
-#todo-list li {
-    background: var(--card);
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
-}
