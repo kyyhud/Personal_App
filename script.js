@@ -19,7 +19,13 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-//  --- THEME PICKER ---
+// --- RANDOM NUMBER GENERATOR ---
+function generateRandomNumber() {
+    const randomNumber = (Math.round(Math.random()*100));
+    document.getElementById("result").innerHTML = `Your random number is: <strong>${randomNumber}</strong>`;
+}
+
+//  --- THEME CUSTOMIZER ---
 const colorBg = document.getElementById("color-bg");
 const colorText = document.getElementById("color-text");
 const colorCard = document.getElementById("color-card");
@@ -59,7 +65,7 @@ function updateTheme() {
 }
 resetThemeBtn.addEventListener("click", () => {
     const defaultColors = {
-        bg: "#f4f4f4",
+        bg: "#d9d9d9",
         text: "#222222",
         card: "#ffffff"
     };

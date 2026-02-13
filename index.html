@@ -7,55 +7,59 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <header>
-        <h1 id="greeting">Welcome</h1>
-        <div id="clock">00:00:00</div>
-    </header>
-
-    <main>
-        <section class="widget">
-            <h2>To&ndash;Do List</h2>
-            <div class="todo-input">
-                <input type="text" id="todo-text" placeholder="Add a task..." />
-                <button id="add-todo">Add</button>
-            </div>
-            <ul id="todo-list"></ul>
-        </section>
-                <section class="widget">
-            <div>
-                <h2><a href="Calculator/Calculator.html">Open Calculator</a></h2>
-            </div>
-        </section>
-        <section class="widget">
-            <div>
-                <h2>Drum Game</h2>
-                <figure>
-                    <a href="DrumKit/drum-index.html">
-                        <img src="DrumKit/drum_thumbnail2.jpg" alt="Drum Game">
-                    </a>
-                    <figcaption><i>Click the image to play the Drum Game!</i></figcaption>
-                </figure>   
-            </div>
-        </section>
-        <section class="widget">
-            <h2>Theme Colors</h2>
-            <div class="theme-row">
-                <label>Background</label>
-                <input type="color" id="color-bg">
-            </div>
-            <div class="theme-row">
-                <label>Text</label>
-                <input type="color" id="color-text">
-            </div>
-            <div class="theme-row">
-                <label>Card</label>
-                <input type="color" id="color-card">
-            </div>
-            <button id="reset-theme">Reset to Default</button>
-        </section>
-    </main>
-
-    <script src="script.js"></script>
+<header>
+    <h1 id="greeting">Welcome</h1>
+    <div id="clock">00:00:00</div>
+</header>
+<main>
+    <section class="widget">
+        <h2>Random Number Generator</h2>
+        <button onclick="generateRandomNumber()">Generate Random Number</button>
+        <div>
+            <p style="font-size: 20px" id="result"><br/></p>
+        </div>
+    </section>
+    <section class="widget">
+        <h2>To&ndash;Do List</h2>
+        <div class="todo-input">
+            <input type="text" id="todo-text" placeholder="Add a task..." />
+            <button id="add-todo">Add</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </section>
+    <section class="widget">
+        <div>
+            <button><a style="text-decoration: none; color: black;" href="Calculator/Calculator.html">Open Calculator</a></button>
+        </div>
+    </section>
+    <section class="widget">
+        <div>
+            <h2>Drum Game</h2>
+            <figure>
+                <a href="DrumKit/drum-index.html">
+                    <img src="DrumKit/drum_thumbnail2.jpg" alt="Drum Game">
+                </a>
+                <figcaption><i>Click the image to play the Drum Game!</i></figcaption>
+            </figure>   
+        </div>
+    </section>
+    <section class="widget">
+        <h2>Theme Colors</h2>
+        <div class="theme-row">
+            <label>Background</label>
+            <input type="color" id="color-bg">
+        </div>
+        <div class="theme-row">
+            <label>Text</label>
+            <input type="color" id="color-text">
+        </div>
+        <div class="theme-row">
+            <label>Card</label>
+            <input type="color" id="color-card">
+        </div>
+        <button id="reset-theme">Reset to Default</button>
+    </section>
+</main>
+<script src="script.js"></script>
 </body>
 </html>
