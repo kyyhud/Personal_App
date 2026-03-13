@@ -1,116 +1,163 @@
 /** Login Page **/
 .login {
-    padding-left: 20px;
+  padding-left: 20px;
 }
-.login>h2{
-    padding-left: 10px;
+.login > h2 {
+  padding-left: 10px;
 }
-.login>form {
-    background-color: white;
-    width: 250px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
+.login > form {
+  background-color: white;
+  width: 250px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.login input{
-    padding: 5px;
-    width: 75%;
-    margin: 5px 5px 10px 5px;
+.login input {
+  padding: 5px;
+  width: 75%;
+  margin: 5px 5px 10px 5px;
 }
-.login button{
-    margin-left: 5px;
-    background: blue;
-    color: white;
-    padding: 6px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.login button {
+  margin-left: 5px;
+  background: blue;
+  color: white;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
+
 /** General Styles **/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: var(--bg);
-    color: var(--text);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
 }
 header {
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  padding: 20px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+input {
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--text);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+input[type="color"] {
+  padding: 0;
+  background: none;
+}
+/* Remove number input spinners */
+/* Chrome, Safari, Edge */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+button {
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--text);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+figcaption > i {
+  color: var(--text);
+}
+footer {
+  color: var(--text);
+  text-align: center;
+  font-size: 0.75rem;
+}
+footer p {
+  font-style: italic;
+}
+footer a {
+  color: var(--text);
 }
 
 /** Widgets **/
 .widget {
-    background: var(--card);
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 10px;
-    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
+  background: var(--card);
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 /** Clock **/
 #clock {
-    font-size: 2rem;
-    margin-top: 10px;
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
 /** To-Do List **/
 .todo-input {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 #todo-list {
-    margin-top: 15px;
-    padding: 0;
-    list-style: none;
+  margin-top: 15px;
+  padding: 0;
+  list-style: none;
 }
 #todo-list li {
-    background: var(--card);
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 6px;
-    display: flex;
-    justify-content: space-between;
+  background: var(--card);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /** Drum Game **/
 a img {
-    width: 100px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
 }
 figure {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 figcaption {
-    font-size: 0.9rem;
-    color: #454545;
-    margin-top: 2px;
+  font-size: 0.9rem;
+  color: #454545;
+  margin-top: 2px;
 }
 
 /** Theme Customizer **/
 .theme-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .theme-row label {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .theme-row input[type="color"] {
-    width: 50px;
-    height: 30px;
-    border: none;
-    background: none;
-    cursor: pointer;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 #reset-theme {
-    margin-top: 10px;
+  margin-top: 10px;
 }
-
-

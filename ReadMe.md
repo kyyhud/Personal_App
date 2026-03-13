@@ -13,9 +13,12 @@ A knowledge-display dashboard designed to translate core JavaScript fundamentals
 - **Form validation** — input handling and basic login/to-do validation logic
 - **localStorage** — persists theme preferences and to-do items across sessions
 - **Date/Time API** — powers a live clock and context-aware greeting based on time of day
-- **Randomization** — generates and formats random number output dynamically
+- **Inclusive range randomization** — computes random values between user-defined minimum and maximum bounds
+- **Real-time UI feedback** — displays success/error output messages based on input state
+- **Input parsing and type conversion** — handles numeric user input safely before calculations
+- **Validation-first logic** — uses guard clauses to block invalid input and prevent runtime issues
 - **Calculator logic** — handles operators, backspace, clear, sign change, and expression evaluation
-- **Drum kit interaction** — maps keyboard keys and click events to audio playback with visual feedback
+- **DJ Game interaction** — maps keyboard keys and click events to audio playback with visual feedback
 - **Modular structure** — separates concerns across a dashboard, calculator, and drum kit with shared navigation
 
 ## Features
@@ -29,19 +32,21 @@ A knowledge-display dashboard designed to translate core JavaScript fundamentals
 
 - Dynamic greeting based on time of day
 - Live digital clock
-- Random number generator (0-100)
+- Custom range random number generator with min/max input, validation rules, and inclusive random output
 - To-Do list with add/delete functionality
 - Theme customizer (background, text, card colors)
 - Theme + to-do persistence using `localStorage`
 
 ### 3. Calculator Mini-App
+
 - Basic arithmetic operations
 - Number/operator input with backspace, clear (`C`), and clear entry (`CE`)
 - Sign change (`+/-`) and expression evaluation
 
-### 4. Drum Kit Mini-App
+### 4. DJ Game Mini-App
+
 - Keyboard support (`A S D F G H J K L`)
-- Click-to-play drum pads with audio playback and key animation
+- Click-to-play key pads with audio playback and key animation
 
 ## Folder Structure
 
@@ -61,6 +66,7 @@ Demo_Personal_App/
     |-- drum-style.css
     `-- sounds/
 ```
+
 ## How To Run
 
 1. Open the project folder in VS Code.

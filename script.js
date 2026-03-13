@@ -21,11 +21,30 @@ updateClock();
 
 // --- RANDOM NUMBER GENERATOR ---
 const randomNumberBtn = document.getElementById("random-number-btn");
+
+const randomResult = document.getElementById("result");
+
 randomNumberBtn.addEventListener("click", generateRandomNumber);
 
 function generateRandomNumber() {
-  const randomNumber = Math.round(Math.random() * 100);
-  document.getElementById("result").innerHTML = `Your random number is: <strong>${randomNumber}</strong>`;
+  const minValue = document.getElementById("min-random").value;
+  const maxValue = document.getElementById("max-random").value;
+  if (minValue === "" || maxValue === "") {
+    randomResult.textContent = "Please enter both minimum and maximum values.";
+    return;
+  }
+  const minNum = Number(minValue);
+  const maxNum = Number(maxValue);
+  if (minNum === 0) {
+    randomResult.textContent = "Select a number higher than 0.";
+    return;
+  }
+  if (maxNum <= minNum) {
+    randomResult.textContent = "Please enter a maximum value greater than the minimum value.";
+    return;
+  }
+  const randomNumber = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+  randomResult.innerHTML = `Your random number is: <strong>${randomNumber}</strong>`;
 }
 
 //  --- THEME CUSTOMIZER ---
